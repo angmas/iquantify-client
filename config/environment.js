@@ -7,7 +7,7 @@ module.exports = function (environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-    apiHost: 'https://iquantify-api.herokuapp.com/',
+    apiHost: 'https://iquantify-api.herokuapp.com',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/iquantify-client'
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://iquantify-api.herokuapp.com/';
+    ENV.apiHost = 'https://iquantify-api.herokuapp.com';
   }
 
   return ENV;
