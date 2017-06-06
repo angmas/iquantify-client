@@ -10,7 +10,8 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('resources', function() {});
+  this.route('resources');
+  this.route('researches', function() {});
 });
 
 export default Router;

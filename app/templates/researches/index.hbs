@@ -1,0 +1,12 @@
+<h2>Research List</h2>
+<ul>
+{{#each model as |research|}}
+  <li>
+    <p>Private Research?: {{research.hide}}</p>
+    <p>Title: {{research.title}}</p>
+    <p>Description: {{research.description}}</p>
+    <p>Directions: {{research.directions}}</p>
+    <p>{{research.announcement.updatedAt}} Announcement: {{research.announcement.message}}</p>
+  </li>
+{{/each}}
+</ul>
