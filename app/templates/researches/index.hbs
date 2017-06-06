@@ -4,11 +4,11 @@
   <li>
     <p>Private Research?: {{research.hide}}</p>
     <p>Title: {{research.title}}</p>
-    <p>Created: {{research.createdAt}}</p>
-    <p>Modified: {{research.updatedAt}}</p>
+    <p>Created: {{format-date research.createdAt formatType="datetime"}}</p>
+    <p>Modified: {{format-date research.updatedAt formatType="datetime"}}</p>
     <p>Description: {{research.description}}</p>
     <p>Directions: {{research.directions}}</p>
-    <p>{{research.announcement.updatedAt}} Announcement: {{research.announcement.message}}</p>
+    <p>{{format-date research.announcement.updatedAt formatType="date"}} Announcement: {{research.announcement.message}}</p>
     <p>Editable?: {{research.editable}}</p>
   </li>
 {{/each}}
