@@ -1,15 +1,2 @@
-<h2>Research List</h2>
-<ul>
-{{#each model as |research|}}
-  <li>
-    <p>Private Research?: {{research.hide}}</p>
-    <p>Title: {{research.title}}</p>
-    <p>Created: {{format-date research.createdAt formatType="datetime"}}</p>
-    <p>Modified: {{format-date research.updatedAt formatType="datetime"}}</p>
-    <p>Description: {{research.description}}</p>
-    <p>Directions: {{research.directions}}</p>
-    <p>{{format-date research.announcement.updatedAt formatType="date"}} Announcement: {{research.announcement.message}}</p>
-    <p>Editable?: {{research.editable}}</p>
-  </li>
-{{/each}}
-</ul>
+<h2>Research Items</h2>
+{{researches/research-list researches=model}}
