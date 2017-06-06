@@ -6,7 +6,8 @@ export default DS.Model.extend({
   directions: DS.attr('string'),
   announcement: DS.attr(),
   hide: DS.attr('boolean'),
-  createdAt: DS.attr('string'),
-  updatedAt: DS.attr('string'),
+  editable: DS.attr('boolean'),
+  createdAt: DS.attr(),
+  updatedAt: DS.attr(),
   user: DS.belongsTo('user'),
 });
