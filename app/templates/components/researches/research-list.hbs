@@ -1,0 +1,28 @@
+<h2>Owner Component</h2>
+<table class="table table-responsive" style="float:right">
+<thead class="thead-default">
+  <tr>
+    <th>Actions</th>
+    <th>Title</th>
+    <th>Announcement</th>
+    <th>Research Item Created</th>
+    <th>Research Item Updated</th>
+  </tr>
+  </thead>
+  <tbody>
+    {{#each researches as |research|}}
+    <tr>
+      <td>
+        <button type="button" class="btn btn-default edit-button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-default delete-button">
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </button>
+      </td>
+      <td>{{research.title}}</td>
+      <td>{{research.announcement.message}}</td>
+      <td>{{format-date research.createdAt formatType="datetime"}}</td>
+      <td>{{format-date research.updatedAt formatType="datetime"}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
