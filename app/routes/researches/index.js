@@ -9,10 +9,11 @@ export default Ember.Route.extend({
       // console.log('Delete action on top research: ', research);
       research.destroyRecord();
     },
-    // createItem(data) {
-    //   console.log('list createItem data: ', data);
-    //   let itemRecord = this.get('store').createRecord('item', data);
-    //   itemRecord.save();
-    // }
+    createResearch(research) {
+      console.log('list createItem data: ', research);
+      let researchRecord = this.get('store').createRecord('research', research);
+      researchRecord.save();
+      console.log('index createResearch this: ', this)
+    }
 },
 });
