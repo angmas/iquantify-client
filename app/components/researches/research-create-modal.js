@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     }
   },
   actions: {
-    closeModal(newResearch) {
+    closeModal() {
       this.toggleProperty('modal');
       this.$('form').trigger('reset');
       // console.log('closeModal this: ', this)

@@ -14,10 +14,10 @@ export default Ember.Route.extend({
       let researchRecord = this.get('store').createRecord('research', research);
       researchRecord.save()
       .then(() => {
-        $('.modal').modal('hide')
-        $('form').trigger('reset')
+        Ember.$('.modal').modal('hide');
+        Ember.$('form').trigger('reset');
       })
-      .catch()
+      .catch();
     }
 },
 });
