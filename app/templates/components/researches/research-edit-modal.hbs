@@ -18,19 +18,19 @@
             <div class="form-group">
               <label for="research-edit-description" class="col-sm-3 control-label">Description</label>
               <div class="col-sm-8">
-                <textarea id="research-edit-description" type="text" class="research-description form-control" placeholder="Description" rows="3"></textarea>
+                {{textarea id="research-edit-description" type="text" class="research-description form-control" placeholder="Description" rows="3" value=newResearch.description}}
               </div>
             </div>
             <div class="form-group">
               <label for="research-edit-directions" class="col-sm-3 control-label">Directions</label>
               <div class="col-sm-8">
-                <textarea id="research-edit-directions" type="text" class="research-directions form-control" placeholder="Directions" rows="3"></textarea>
+                {{textarea id="research-edit-directions" type="text" class="research-directions form-control" placeholder="Directions" rows="3" value=newResearch.directions}}
               </div>
             </div>
             <div class="form-group">
               <label for="research-edit-announcement" class="col-sm-3 control-label">Announcement</label>
               <div class="col-sm-8">
-                <textarea id="research-edit-announcement" type="text" class="research-announcement form-control" placeholder="Announcement" rows="3"></textarea>
+                {{textarea id="research-edit-announcement" type="text" class="research-announcement form-control" placeholder="Announcement" rows="3" value=newResearch.announcement.message}}
               </div>
             </div>
           </fieldset>
