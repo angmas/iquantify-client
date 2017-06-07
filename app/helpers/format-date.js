@@ -19,8 +19,8 @@ export default Ember.Helper.extend({
   compute(params, hash) {
     {
       let formattedDate;
-      console.log('params: ', params)
-      console.log('hash: ', hash)
+      // console.log('params: ', params)
+      // console.log('hash: ', hash)
       if (hash.formatType === 'datetime') {
         formattedDate = moment(params, moment.ISO_8601).format('MM/DD/YYYY h:mm:ss a');
       } else if (hash.formatType === 'date') {
