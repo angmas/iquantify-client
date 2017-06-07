@@ -10,12 +10,13 @@ export default Ember.Component.extend({
     }
   },
   actions: {
-    closeModal(){
-      this.set('newResearch.title', null)
-      console.log('closeModal newResearch: ', this.get(newResearch))
+    closeModal(newResearch) {
+      this.toggleProperty('modal');
+      this.$('form').trigger('reset');
+      // console.log('closeModal this: ', this)
     },
     createResearch(research) {
-      console.log('modal newResearch: ', this.get('newResearch'));
+      // console.log('modal newResearch: ', this.get('newResearch'));
       return this.sendAction('createResearch', this.get('newResearch'));
     }
   },

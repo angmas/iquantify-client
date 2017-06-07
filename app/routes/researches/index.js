@@ -12,8 +12,12 @@ export default Ember.Route.extend({
     createResearch(research) {
       console.log('list createItem data: ', research);
       let researchRecord = this.get('store').createRecord('research', research);
-      researchRecord.save();
-      console.log('index createResearch this: ', this)
+      researchRecord.save()
+      .then(() => {
+        $('.modal').modal('hide')
+        $('form').trigger('reset')
+      })
+      .catch()
     }
 },
 });
