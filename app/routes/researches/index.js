@@ -18,6 +18,9 @@ export default Ember.Route.extend({
         Ember.$('form').trigger('reset');
       })
       .catch();
+    },
+    goToResearchEdit(research) {
+      this.transitionTo('researches.research-edit',research)
     }
 },
 });

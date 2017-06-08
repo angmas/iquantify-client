@@ -7,6 +7,9 @@ export default Ember.Component.extend({
         // console.log('research-list this: ', this.get('research') );
         return this.sendAction('researchDelete', this.get('research'));
 
+      },
+      goToResearchEdit () {
+        this.sendAction('goToResearchEdit', this.get('research'));
       }
     },
 });

@@ -12,7 +12,8 @@
   <tbody>
     {{#each researches as |research|}}
     {{researches/research-list research=research
-      researchDelete=researchDelete}}
+      researchDelete="researchDelete"
+      goToResearchEdit="goToResearchEdit"}}
     {{/each}}
   </tbody>
 </table>
