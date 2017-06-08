@@ -10,6 +10,10 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
+  this.route('resources');
+  this.route('researches', function() {
+    this.route('research-edit', { path:'/:research_id'});
+  });
 });
 
 export default Router;

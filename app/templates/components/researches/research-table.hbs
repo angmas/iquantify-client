@@ -1,0 +1,19 @@
+<h2>Owner Component</h2>
+<table class="table table-responsive" style="float:right">
+<thead class="thead-default">
+  <tr>
+    <th>Actions</th>
+    <th>Title</th>
+    <th>Announcement</th>
+    <th>Research Item Created</th>
+    <th>Research Item Updated</th>
+  </tr>
+</thead>
+  <tbody>
+    {{#each researches as |research|}}
+    {{researches/research-list research=research
+      researchDelete="researchDelete"
+      goToResearchEdit="goToResearchEdit"}}
+    {{/each}}
+  </tbody>
+</table>

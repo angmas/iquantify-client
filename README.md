@@ -19,6 +19,8 @@ If you have not installed phantomjs, you will need to install it globally:
 
 -   [ember.js](http://emberjs.com/)
 -   [ember-cli](http://www.ember-cli.com/)
+-   [ember-cli-moment-shim](https://www.npmjs.com/package/ember-cli-moment-shim)
+-   [ember-moment](https://github.com/stefanpenner/ember-moment)
 -   [Bootstrap](http://getbootstrap.com)
 
 At the beginning of each cohort, update this template by upgrading `ember-cli`
@@ -31,6 +33,7 @@ other customizations, including Bootstrap.
 1.  Fork & Clone/Download & Unzip this repository.
 1.  Move into the new project and `git init`.
 1.  Install dependencies with `npm install` and `bower install`.
+    Install ember moment with `ember install ember-moment`
 1.  Run the development server with `ember server`. Use the `--proxy` flag to
     avoid writing development-specific CORS and CSP settings.
 

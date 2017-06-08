@@ -1,0 +1,11 @@
+
+      <td>
+        <button {{action 'goToResearchEdit'}}type="button" class="btn btn-default edit-button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+        <button {{action 'researchDelete'}} type="button" class="btn btn-default delete-button">
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </button>
+      </td>
+      <td>{{research.title}}</td>
+      <td>{{research.announcement.message}}</td>
+      <td>{{format-date research.createdAt formatType="datetime"}}</td>
+      <td>{{format-date research.updatedAt formatType="datetime"}}</td>
