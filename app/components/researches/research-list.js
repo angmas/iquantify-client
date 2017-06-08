@@ -10,6 +10,9 @@ export default Ember.Component.extend({
       },
       goToResearchEdit () {
         this.sendAction('goToResearchEdit', this.get('research'));
+      },
+      goToResearch () {
+        this.sendAction('goToResearch', this.get('research'));
       }
     },
 });

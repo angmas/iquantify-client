@@ -21,6 +21,9 @@ export default Ember.Route.extend({
     },
     goToResearchEdit(research) {
       this.transitionTo('researches.research-edit',research)
+    },
+    goToResearch(research) {
+      this.transitionTo('research',research)
     }
 },
 });
