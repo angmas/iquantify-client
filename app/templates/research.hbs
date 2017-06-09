@@ -14,19 +14,10 @@
     </div>
   </div>
 </nav>
-<div class="container">
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
-<div class="jumbotron">
-<h2>Research Items</h2>
-<br>
-<br>
-{{researches/research-add-button}}
-</div>
-</div>
-{{researches/research-create-modal createResearch="createResearch"}}
-{{researches/research-table researches=model
-  researchDelete="researchDelete"
-  goToResearchEdit="goToResearchEdit"
-  goToResearch="goToResearch"}}
+{{researches/research-count
+  research=model
+  createQuantum="createQuantum"
+}}

@@ -6,6 +6,9 @@
         </button>
       </td>
       <td>{{research.title}}</td>
+      <td>
+        <i {{action 'goToResearch'}} class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+      </td>
       <td>{{research.announcement.message}}</td>
       <td>{{format-date research.createdAt formatType="datetime"}}</td>
       <td>{{format-date research.updatedAt formatType="datetime"}}</td>

@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div class="jumbotron">
+      <button {{action "createQuantumPlusOne"}} type="button" class="btn btn-success btn-lg counter" data-dismiss="modal"><i class="fa fa-plus" aria-hidden="true"></i><strong> 1</strong></button>
+      <h1>{{research.total}}</h1>
+      <button {{action "createQuantumMinusOne"}} type="submit" class="btn btn-danger btn-lg counter"><i class="fa fa-minus" aria-hidden="true"></i><strong> 1</strong></button>
+  </div>
+
+  <br>
+  <h2>{{research.title}}</h2>
+  <h3 class=".announcement">{{format-date research.updatedAt formatType="date"}}   {{research.announcement.message}}</h3>
+  <br>
+  <h4>Description</h4>
+  <p>{{research.description}}</p>
+  <br>
+  <h4>Directions</h4>
+  <p>{{research.directions}}</p>
+  <br>
+</div>
