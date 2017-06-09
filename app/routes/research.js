@@ -9,12 +9,12 @@ export default Ember.Route.extend({
       let quantumRecord = this.get('store').createRecord('quantum', quantum);
       quantumRecord.save()
       .then(()=> {
-        let researchRecord = this.get('store').findRecord('research', quantum.research.id)
-        this.refresh()
+        // let researchRecord = this.get('store').findRecord('research', quantum.research.id);
+        this.refresh();
       })
       .then(()=> {
-        this.transitionTo('research')
-      })
+        this.transitionTo('research');
+      });
 
     }
   }

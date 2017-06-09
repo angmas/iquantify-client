@@ -10,7 +10,7 @@ export default ApplicationAdapter.extend({
     // console.log('serialized: ', serialized);
     const researchId = serialized.research_id;
     let url = `${api}/research/${researchId}`;
-    const data = { quantum: serialized }
+    const data = { quantum: serialized };
     return this.ajax(url, 'POST', { data });
     }
 });

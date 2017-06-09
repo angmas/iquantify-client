@@ -1,5 +1,7 @@
 # iQuantify Client
 
+iQuanitify helps the individual and/or a team keep
+of data that they've gathered in a easy to use interface.
 
 
 ## Links

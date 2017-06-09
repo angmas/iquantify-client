@@ -25,6 +25,7 @@ export default Ember.Route.extend({
           .then(() => {
             Ember.$('.modal').modal('hide');
             Ember.$('form').trigger('reset');
+            this.refresh()
           })
           .catch(() => {
             this.get('flashMessages')
