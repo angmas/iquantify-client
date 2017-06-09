@@ -13,10 +13,10 @@ export default Ember.Component.extend({
     closeModal() {
       this.toggleProperty('modal');
       this.$('form').trigger('reset');
-      // console.log('closeModal this: ', this)
+      // // console.log('closeModal this: ', this)
     },
     createResearch() {
-      // console.log('modal newResearch: ', this.get('newResearch'));
+      // // console.log('modal newResearch: ', this.get('newResearch'));
       return this.sendAction('createResearch', this.get('newResearch'));
     }
   },
