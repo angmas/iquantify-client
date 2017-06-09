@@ -6,9 +6,16 @@ export default Ember.Route.extend({
   },
   actions: {
     createQuantum(quantum) {
-      console.log('research quantum: ', quantum);
       let quantumRecord = this.get('store').createRecord('quantum', quantum);
-      quantumRecord.save();
+      quantumRecord.save()
+      .then(()=> {
+        let researchRecord = this.get('store').findRecord('research', quantum.research.id)
+        this.refresh()
+      })
+      .then(()=> {
+        this.transitionTo('research')
+      })
+
     }
   }
 });

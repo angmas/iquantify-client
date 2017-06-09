@@ -7,6 +7,7 @@ export default DS.Model.extend({
   announcement: DS.attr(),
   hide: DS.attr('boolean'),
   editable: DS.attr('boolean'),
+  total: DS.attr('number'),
   createdAt: DS.attr(),
   updatedAt: DS.attr(),
   user: DS.belongsTo('user'),
