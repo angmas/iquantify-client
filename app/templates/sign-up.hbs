@@ -1,3 +1,20 @@
-<h2>Sign Up</h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    {{navbar-header}}
 
-{{sign-up-form submit="signUp"}}
+    <div class="collapse navbar-collapse" id="navigation" data-toggle="collapse" data-target="#navigation">
+    </div>
+  </div>
+</nav>
+<div class="container">
+  {{#each flashMessages.queue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
+  <div class="jumbotron">
+<h2>Sign Up</h2>
+<br>
+<br>
+{{sign-up-form submit="signUp"
+goToIndex="goToIndex"}}
+</div>
+</div>

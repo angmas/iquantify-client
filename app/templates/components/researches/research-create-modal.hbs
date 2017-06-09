@@ -1,9 +1,12 @@
 <div id="my-modal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button {{action "closeModal"}} type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title">New Research</h3>
+        {{#each flashMessages.queue as |flash|}}
+          {{flash-message flash=flash}}
+          {{/each}}
       </div>
 
       <form class="form-horizontal">

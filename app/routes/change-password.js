@@ -7,8 +7,8 @@ export default Ember.Route.extend({
   actions: {
     changePassword (passwords) {
       this.get('auth').changePassword(passwords)
-      .then(() => this.get('auth').signOut())
-      .then(() => this.transitionTo('sign-in'))
+      // .then(() => this.get('auth').signOut())
+      .then(() => this.transitionTo('researches'))
       .then(() => {
         this.get('flashMessages')
         .success('Successfully changed your password!');
@@ -21,5 +21,8 @@ export default Ember.Route.extend({
         .danger('There was a problem. Please try again.');
       });
     },
+    goToResearches() {
+      this.transitionTo('researches')
+    }
   },
 });
