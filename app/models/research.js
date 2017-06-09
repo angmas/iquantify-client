@@ -10,4 +10,5 @@ export default DS.Model.extend({
   createdAt: DS.attr(),
   updatedAt: DS.attr(),
   user: DS.belongsTo('user'),
+  quantums: DS.hasMany('quantum')
 });
